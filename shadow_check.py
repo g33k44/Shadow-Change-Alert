@@ -33,7 +33,7 @@ def send( user , passwd ,  text ) :
 	msg["From"] = "email@something.com"
 	msg["Subject"] = "Shadow Changed" 
 	try : 
-		smtp = smtplib.SMTP("smtp.gmail.com" , 587) # change it if you are using zoho
+		smtp = smtplib.SMTP("smtp.gmail.com" , 587) 
 		smtp.ehlo()
 		smtp.starttls()
 		smtp.ehlo()
